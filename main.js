@@ -1,26 +1,45 @@
-const fileInput = document.getElementById("fileInput");
-const preview = document.getElementById("preview");
-const avatarWrapper = document.getElementById("avatarWrapper");
-const uploadOverlay = document.getElementById("uploadOverlay");
 
-// click avatar để mở chọn file
-avatarWrapper.addEventListener("click", () => {
-    fileInput.click();
+const menuBtn =
+document.querySelector(".menu-btn");
+
+const navLinks =
+document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
 });
 
-// khi chọn ảnh
+const fileInput =
+document.getElementById("fileInput");
+
+const preview =
+document.getElementById("preview");
+
+const avatarWrapper =
+document.getElementById("avatarWrapper");
+
+avatarWrapper.addEventListener("click", () => {
+
+    fileInput.click();
+
+});
+
 fileInput.addEventListener("change", function () {
 
     const file = this.files[0];
 
-    if (file) {
+    if(file){
 
-        const imageURL = URL.createObjectURL(file);
+        const imageURL =
+        URL.createObjectURL(file);
 
         preview.src = imageURL;
+
         preview.style.display = "block";
 
-        // thêm class để ẩn nút chọn ảnh
         avatarWrapper.classList.add("has-image");
     }
+
 });

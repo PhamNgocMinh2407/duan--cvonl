@@ -2,226 +2,204 @@
 <html lang="en">
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
-  <title>CV Portfolio</title>
+    <title>Portfolio - Pham Ngoc Minh</title>
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 </head>
 
 <body>
 
-<div class="container">
+    <header class="header">
 
-  <!-- LEFT SIDEBAR -->
-  <aside class="sidebar">
+        <div class="logo">
+            <h2>MINH CV</h2>
+        </div>
 
-    <div class="profile">
+        <nav class="navbar">
 
-      <h1>PHAM NGOC MINH</h1>
+            <ul class="nav-links">
 
-      <p>Intern IT Helpdesk</p>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
 
-      <!-- UPLOAD IMAGE -->
-      <div class="upload-box">
+                <li>
+                    <a href="pages/about.html">
+                        About
+                    </a>
+                </li>
 
-  <!-- Input file -->
-  <input
-    type="file"
-    id="fileInput"
-    accept="image/*"
-    hidden
-  >
+                <li>
+                    <a href="pages/cv.html">
+                        CV
+                    </a>
+                </li>
 
-  <!-- Avatar -->
-  <div class="avatar-wrapper" id="avatarWrapper">
+                <li>
+                    <a href="pages/product.html">
+                        My Product
+                    </a>
+                </li>
 
-    <img
-      id="preview"
-      alt="avatar"
-    >
+                <li>
+                    <a href="pages/contact.html">
+                        Contact
+                    </a>
+                </li>
 
-    <!-- Overlay chọn ảnh -->
-    <div class="upload-overlay" id="uploadOverlay">
-      <span>Chọn ảnh</span>
-    </div>
+            </ul>
 
-  </div>
+        </nav>
 
-</div>
-    </div>
+        <div class="menu-btn">
 
-    <!-- PERSONAL INFO -->
-    <div class="section">
-
-      <h2>Thông tin cá nhân</h2>
-
-      <ul>
-
-        <li><i class="fa-solid fa-calendar"></i> 24/07/2003</li>
-
-        <li><i class="fa-solid fa-user"></i> Nam</li>
-
-        <li><i class="fa-solid fa-phone"></i> 0375xxxxxx</li>
-
-        <li><i class="fa-solid fa-envelope"></i> email@gmail.com</li>
-
-        <li><i class="fa-solid fa-location-dot"></i> TP.HCM</li>
-
-      </ul>
-
-    </div>
-
-    <!-- SKILLS -->
-    <div class="section">
-
-      <h2>Các kỹ năng</h2>
-
-      <div class="skill">
-
-        <h4>Cấu hình modem wifi</h4>
-
-        <p>Cài đặt và cấu hình thiết bị wifi</p>
-
-      </div>
-
-      <div class="skill">
-
-        <h4>Cấu hình switch</h4>
-
-        <p>Chia VLAN, mạng con</p>
-
-      </div>
-
-      <div class="skill">
-
-        <h4>Database</h4>
-
-        <p>SQL cơ bản</p>
-
-      </div>
-
-    </div>
-
-  </aside>
-
-  <!-- RIGHT CONTENT -->
-  <main class="content">
-
-    <!-- CAREER -->
-    <section>
-
-      <h2>Mục tiêu nghề nghiệp</h2>
-
-      <p>
-        Mong muốn phát triển kỹ năng IT và đóng góp
-        cho doanh nghiệp.
-      </p>
-
-    </section>
-
-    <!-- EDUCATION -->
-    <section>
-
-      <h2>Học vấn</h2>
-
-      <div class="item">
-
-        <div class="item-header">
-
-          <h3>Cao Đẳng Việt Mỹ</h3>
-
-          <span>2024 - Hiện tại</span>
+            <i class="fa-solid fa-bars"></i>
 
         </div>
 
-        <p>CNTT - Ứng dụng phần mềm</p>
+    </header>
 
-      </div>
+    <section class="hero">
 
-    </section>
+        <div class="hero-content">
 
-    <!-- EXPERIENCE -->
-    <section>
+            <!-- LEFT -->
 
-      <h2>Kinh nghiệm làm việc</h2>
+            <div class="hero-text">
 
-      <div class="item">
+                <h1>
+                    PHAM NGOC MINH
+                </h1>
 
-        <div class="item-header">
+                <h3>
+                    Intern IT Helpdesk
+                </h3>
 
-          <h3>Hỗ trợ training công cụ AI</h3>
+                <p>
 
-          <span>2024</span>
+                    Xin chào! Mình là sinh viên ngành
+                    Công Nghệ Thông Tin, yêu thích
+                    IT Support, Networking và
+                    Web Development.
+
+                </p>
+
+                <div class="hero-btns">
+
+                    <a href="pages/cv.html"
+                    class="btn">
+
+                        Xem CV
+
+                    </a>
+
+                    <a href="pages/contact.html"
+                    class="btn btn-outline">
+
+                        Liên hệ
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <!-- input chọn file -->
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept="image/*"
+                    hidden
+                >
+
+                <div class="avatar-wrapper"
+                id="avatarWrapper">
+
+                    <img
+                        id="preview"
+                        alt="avatar"
+                    >
+
+                    <div
+                    class="upload-overlay"
+                    id="uploadOverlay">
+
+                        <span>
+                            Chọn ảnh
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
-        <p>Training thực tập sinh sử dụng AI.</p>
+    </section>
 
-      </div>
+    <section class="social">
 
-      <div class="item">
+        <h2>Kết nối với tôi</h2>
 
-        <div class="item-header">
+        <div class="social-icons">
 
-          <h3>Workshop AI</h3>
+            <a href="https://facebook.com"
+            target="_blank">
 
-          <span>2025</span>
+                <i class="fa-brands fa-facebook-f"></i>
+
+            </a>
+
+            <a href="https://github.com"
+            target="_blank">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+            <a href="mailto:email@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+            <a href="https://linkedin.com"
+            target="_blank">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+            </a>
 
         </div>
 
-        <p>Thực hành các phần mềm AI.</p>
-
-      </div>
-
     </section>
 
-    <!-- ACTIVITIES -->
-    <section>
+    <footer class="footer">
 
-      <h2>Hoạt động</h2>
+        <p>
 
-      <div class="item">
+            © 2026 Pham Ngoc Minh Portfolio
 
-        <div class="item-header">
+        </p>
 
-          <h3>Tình nguyện viên</h3>
+    </footer>
 
-          <span>2024</span>
-
-        </div>
-
-        <p>Hỗ trợ chương trình cộng đồng.</p>
-
-      </div>
-
-    </section>
-
-    <!-- CERTIFICATES -->
-    <section>
-
-      <h2>Chứng chỉ</h2>
-
-      <ul class="certificate">
-
-        <li>Toeic 650</li>
-        <li>HTML CSS Certificate</li>
-        <li>Google AI Course</li>
-
-      </ul>
-
-    </section>
-
-  </main>
-
-</div>
-
-<script src="main.js"></script>
+    <script src="main.js"></script>
 
 </body>
 </html>
