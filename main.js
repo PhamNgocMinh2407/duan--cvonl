@@ -4,12 +4,15 @@ document.querySelector(".menu-btn");
 
 const navLinks =
 document.querySelector(".nav-links");
+if(menuBtn && navLinks){
 
-menuBtn.addEventListener("click", () => {
+    menuBtn.addEventListener("click", () => {
 
-    navLinks.classList.toggle("active");
+        navLinks.classList.toggle("active");
 
-});
+    });
+
+}
 
 const fileInput =
 document.getElementById("fileInput");
@@ -20,26 +23,30 @@ document.getElementById("preview");
 const avatarWrapper =
 document.getElementById("avatarWrapper");
 
-avatarWrapper.addEventListener("click", () => {
+if(avatarWrapper && fileInput && preview){
 
-    fileInput.click();
+    avatarWrapper.addEventListener("click", () => {
 
-});
+        fileInput.click();
 
-fileInput.addEventListener("change", function () {
+    });
 
-    const file = this.files[0];
+   fileInput.addEventListener("change", function(){
 
-    if(file){
+        const file = this.files[0];
 
-        const imageURL =
-        URL.createObjectURL(file);
+        if(file){
 
-        preview.src = imageURL;
+            const imageURL =
+            URL.createObjectURL(file);
+            preview.src = imageURL;
+           preview.style.display = "block";
+            avatarWrapper.classList.add(
+                "has-image"
+            );
 
-        preview.style.display = "block";
+        }
 
-        avatarWrapper.classList.add("has-image");
-    }
+    });
 
-});
+}
