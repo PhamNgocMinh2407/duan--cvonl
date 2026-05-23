@@ -13,4 +13,4 @@
 - Github Deploy
 
 ## Author
-Nguyen Van A
+Pham Ngoc Minh portfolio
